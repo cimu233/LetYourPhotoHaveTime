@@ -1,6 +1,8 @@
 # LetYourPhotoHaveTime
 This program scans a folder, finds each file’s best “shot time” (from EXIF or the filename), fills missing times by interpolation, and then optionally syncs the file’s filesystem timestamps (and writes EXIF for photos) to match.
 
+**AI usage rate: 99%**
+
 ## Main logic of the program (English)
 
 This tool reconstructs a reasonable “shot time” timeline for a folder of media files, then optionally syncs the filesystem timestamps (and photo EXIF) to that timeline.
@@ -63,6 +65,8 @@ For files with no `shot`, the program assigns a `target` time:
 给一堆照片/截图/视频文件（按“文件修改时间”排序），尽可能恢复出每个文件的“拍摄时间 target”，然后可选把**文件系统时间（创建/修改/写入时间）**同步到这个 target；对能写 EXIF 的图片还会补写 EXIF 里的拍摄时间。
 
 ---
+
+**AI使用率99%**
 
 ## 主要逻辑流程（从输入到输出）
 
